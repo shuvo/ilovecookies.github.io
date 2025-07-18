@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love Cookies</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a more appealing look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: royalblue; /* Royal blue background as requested */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure it takes full viewport height */
+            margin: 0;
+            padding: 20px; /* Add some padding around the content */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+    </style>
+
+    <!-- Tracker Embeddings -->
+
+    <!-- Google Tag (gtag.js) - Global Site Tag for Google Analytics 4 (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX'); /* Replace G-XXXXXXXXXX with your actual GA4 Measurement ID */
+    </script>
+
+    <!-- Google Fonts (Example: Loading Inter font, though already imported via @import) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Google Marketing Platform (Example: Google Ads Conversion Tracking) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-YYYYYYYYY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-YYYYYYYYY'); /* Replace AW-YYYYYYYYY with your actual Google Ads Conversion ID */
+    </script>
+
+    <!-- YouTube (Embedding a placeholder video to load YouTube's scripts) -->
+    <!-- Note: YouTube embeds load their own tracking scripts. This iframe is a common way to trigger them. -->
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&controls=0&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:none;"></iframe>
+
+    <!-- Forter (Fraud Prevention - Placeholder Script) -->
+    <script>
+        (function() {
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+            s.src = 'https://cdn.forter.com/scripts/forter.js?v=' + new Date().getTime(); /* Placeholder URL - Replace with actual Forter script URL */
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+
+    <!-- Meta Pixel (Facebook Pixel) -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID'); /* Replace YOUR_PIXEL_ID with your actual Meta Pixel ID */
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+
+    <!-- Mixpanel (Analytics) - Corrected initialization to prevent call stack error -->
+    <script type="text/javascript">
+        (function(f,b){
+            if(!b.__SV){
+                var e,g,i,h;window.mixpanel=b;b._i=[];
+                b.init=function(e,g,f){
+                    function c(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}
+                    var d=b;"undefined"!==typeof f?d=b[f]=[]:f="mixpanel";
+                    c(d,"track");c(d,"setProfile");c(d,"trackCharge");c(d,"setOnce");c(d,"alias");c(d,"identify");c(d,"nameTag");c(d,"register");c(d,"unregister");c(d,"reset");c(d,"group");c(d,"getGroup");c(d,"startSession");c(d,"endSession");c(d,"addSuperProperties");c(d,"setSuperProperties");c(d,"trackLinks");c(d,"trackForms");c(d,"timeEvent");c(d,"clearCharge");c(d,"registerOnce");c(d,"alias");c(d,"setPersonProperties");c(d,"setPersonPropertiesOnce");c(d,"increment");c(d,"append");c(d,"union");c(d,"track_pageview");c(d,"decide");c(d,"disable");c(d,"opt_in_tracking");c(d,"opt_out_tracking");c(d,"has_opted_in_tracking");c(d,"has_opted_out_tracking");c(d,"clear_opt_in_out_tracking");c(d,"get_distinct_id");c(d,"get_property");c(d,"get_session_id");c(d,"get_group");c(d,"set_group");c(d,"get_session_id");c(d,"get_session_id_once");
+                    var a=f.split(".");2==a.length&&(d=b[a[0]],f=a[1]);b[f]=d;g||(g={});g.api_host=g.api_host||"https://api.mixpanel.com";
+                    // Removed the recursive call 'b.init(e,g,f)' from here
+                };
+                b.__SV=1.2;
+                e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+                i=f.getElementsByTagName("script")[0];i.parentNode.insertBefore(e,i);
+            }
+        })(document,window.mixpanel||[]);
+        mixpanel.init("YOUR_MIXPANEL_TOKEN"); /* Replace YOUR_MIXPANEL_TOKEN with your actual Mixpanel Project Token */
+        mixpanel.track("Page Viewed");
+    </script>
+
+    <!-- Qualtrics (Survey/Experience Management - Placeholder Script) -->
+    <script type="text/javascript">
+        (function(){var g=function(e,h,f,g){
+        this.get=function(a){for(var c=0;c<h.length;c++)if(a==h[c].name)return h[c].value;return null};
+        this.set=function(a,c){for(var c=new q(a,c),b=0;b<h.length;b++)if(a==h[b].name){h[b]=c;return}h.push(c)};
+        this.show=function(){for(var a=0;a<h.length;a++)document.write(h[a].name+" = "+h[a].value+"<br>")};
+        function q(a,c){this.name=a;this.value=c}}
+        (window,document,location,"");
+        var s=document.createElement("script");s.type="text/javascript";
+        s.src="https://yourbrand.qualtrics.com/traffic/js/your_project_id.js"; /* Replace with your Qualtrics URL and Project ID */
+        document.body.appendChild(s);})();
+    </script>
+
+    <!-- Sentry (Error Tracking - Placeholder Script) - Corrected integrity attribute -->
+    <script src="https://browser.sentry-cdn.com/7.x.x/bundle.min.js" xintegrity="sha384-..." crossorigin="anonymous"></script>
+    <script>
+        // Ensure Sentry is loaded before initializing.
+        // The integrity hash "sha384-..." is a placeholder; replace with the actual hash for security.
+        if (typeof Sentry !== 'undefined') {
+            Sentry.init({
+                dsn: "https://examplePublicKey@o0.ingest.sentry.io/0", /* Replace with your actual DSN */
+                integrations: [new Sentry.BrowserTracing()],
+                tracesSampleRate: 1.0,
+            });
+        } else {
+            console.warn("Sentry script not loaded, Sentry.init skipped.");
+        }
+    </script>
+
+    <!-- Intercom (Customer Messaging - Placeholder Script) -->
+    <script>
+        (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/YOUR_APP_ID'; /* Replace YOUR_APP_ID */
+        var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+        window.intercomSettings = {
+            app_id: "YOUR_APP_ID" /* Replace YOUR_APP_ID */
+        };
+    </script>
+
+    <!-- X (Twitter) Pixel (Placeholder Script) -->
+    <script>
+        !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+        twq('init','YOUR_TWITTER_PIXEL_ID'); /* Replace YOUR_TWITTER_PIXEL_ID */
+        twq('track','PageView');
+    </script>
+
+    <!-- Reddit Pixel (Placeholder Script) -->
+    <script>
+        !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.callMethod?p.callMethod.apply(p,arguments):p.queue.push(arguments)};p.push=p;p.loaded=!0;p.version='1.0';p.queue=[];var j=d.createElement('script');j.async=!0;j.src='https://www.redditstatic.com/ads/pixel.js';var s=d.getElementsByTagName('script')[0];s.parentNode.insertBefore(j,s);}}(window, document);
+        rdt('init','YOUR_REDDIT_PIXEL_ID'); /* Replace YOUR_REDDIT_PIXEL_ID */
+        rdt('track','PageView');
+    </script>
+
+    <!-- Criteo (Retargeting - Placeholder Script) - Corrected YOUR_CRITEO_ACCOUNT_ID to be a string -->
+    <script type="text/javascript" src="//static.criteo.net/js/ld/ld.js?a=YOUR_CRITEO_ACCOUNT_ID"></script> 
+    <script type="text/javascript">
+        window.criteo_q = window.criteo_q || [];
+        window.criteo_q.push(
+            { event: "setAccount", account: 'YOUR_CRITEO_ACCOUNT_ID' }, /* Replace 'YOUR_CRITEO_ACCOUNT_ID' with your actual Criteo Account ID, enclosed in quotes */
+            { event: "setSiteType", type: "d" }, // 'd' for desktop, 'm' for mobile, 't' for tablet
+            { event: "viewPage" }
+        );
+    </script>
+
+    <!-- Datadog (Monitoring - Placeholder Script) -->
+    <script src="https://www.datadoghq-browser-agent.com/datadoghq-rum-latest.js" type="text/javascript"></script>
+    <script>
+        window.DD_RUM && window.DD_RUM.init({
+            clientToken: 'YOUR_DATADOG_CLIENT_TOKEN', /* Replace YOUR_DATADOG_CLIENT_TOKEN */
+            applicationId: 'YOUR_DATADOG_APPLICATION_ID', /* Replace YOUR_DATADOG_APPLICATION_ID */
+            site: 'datadoghq.com',
+            service: 'my-website',
+            env: 'production',
+            version: '1.0.0',
+            sampleRate: 100,
+            trackInteractions: true,
+            defaultPrivacyLevel: 'mask-user-input'
+        });
+    </script>
+
+    <!-- Microsoft Services (Example: Microsoft Clarity Analytics) -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "YOUR_CLARITY_PROJECT_ID"); /* Replace YOUR_CLARITY_PROJECT_ID */
+    </script>
+
+    <!-- AppNexus (Ad Platform - Placeholder Script) -->
+    <script>
+        var apn = apn || {};
+        apn.anq = apn.anq || [];
+        apn.anq.push(function() {
+            apn.setMember('YOUR_APPNEXUS_MEMBER_ID'); /* Replace YOUR_APPNEXUS_MEMBER_ID */
+            apn.setPageType('homepage');
+            apn.enableAnalytics();
+            apn.loadTags();
+        });
+        (function() {
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript'; g.async = true; g.src = 'https://acdn.adnxs.com/ast/ast.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+
+</head>
+<body>
+    <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-center rounded-lg p-4 bg-black bg-opacity-30 shadow-lg">
+        I Love Cookies
+    </h1>
+
+    <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300 ease-in-out">
+        <img
+            src="https://placehold.co/1000x1000/8B4513/FFFFFF?text=Delicious+Cookie"
+            alt="Large Chocolate Chip Cookie"
+            class="w-full h-full object-cover rounded-full"
+            onerror="this.onerror=null;this.src='https://placehold.co/1000x1000/8B4513/FFFFFF?text=Cookie+Image+Error';"
+        >
+        <!-- Optional: Add a subtle animation or glow effect with CSS -->
+        <div class="absolute inset-0 rounded-full border-4 border-yellow-300 opacity-0 animate-pulse"></div>
+    </div>
+
+    <!-- A small disclaimer for the trackers, visible but not intrusive -->
+    <p class="text-white text-sm mt-10 text-center max-w-lg opacity-70">
+        This page includes various third-party scripts for analytics, advertising, and service integration.
+        For demonstration purposes only.
+    </p>
+
+</body>
+</html>
